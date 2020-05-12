@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dynamic Components Example</title>
+    <script src="https://unpkg.com/vue"></script>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <div id="demo" class="demo">
+      vue demo
+    </div>
+
+    <script>
+      Vue.config.keyCodes = {
+        f2: 113
+      };
+      Vue.component('elButton',{
+      	template: `<input />`
+      })
+      new Vue({
+        el: "#demo",
+        data: {
+          
+        },
+        methods: {
+ 
+        }
+      });
+    </script>
+  </body>
+</html>
